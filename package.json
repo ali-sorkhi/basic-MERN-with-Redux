@@ -1,0 +1,34 @@
+{
+  "name": "ticket",
+  "version": "1.0.0",
+  "description": "GerTick",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-sorkhi/Ticket.git"
+  },
+  "author": "Ali Sorkhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ali-sorkhi/Ticket/issues"
+  },
+  "homepage": "https://github.com/ali-sorkhi/Ticket#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.16"
+  }
+}
