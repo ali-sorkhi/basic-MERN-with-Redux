@@ -5,7 +5,7 @@ import connectDB from "./config/db.js";
 import cookieParser from "cookie-parser";
 import compress from "compression"; //compress response bodies for all requests
 import cors from "cors"; //to enable cross-origin resource sharing (CORS)
-import helmet from "helmet"; //secure Express apps bysetting various HTTP headers
+import helmet from "helmet"; //secure Express apps by setting various HTTP headers
 
 //routes:
 import authRouter from "./routes/authRouter.js";
